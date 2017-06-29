@@ -1,13 +1,153 @@
 {% extends 'blog/base.html' %}
 
     {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+        <div class="main-content">
+	   <div class="container">
+	        <div class="mag-inner">
+			    <div class="col-md-10 col-md-offset-1 mag-innert-left">
+	                            <div class="banner-bottom-left-grids">
+											<div class="single-left-grid">
+												<img src="{{ post.image }}" alt="" >
+												<h4>{{ post.title }}</h4>
+												<p class="text">{{ post.text}}</p>
+												
+												<div class="single-bottom">
+													<ul>
+														<li>{{ post.published_date}}</li>
+														<li><a href="#">{{ post.author }}</a></li>
+													</ul>
+												</div>
+											</div>
+									</div>
+									<div class="post">
+									   <a href="#"><h3>Latest Posts</h3></a>
+									        <div class="post-grids">
+												<div class="col-md-3 post-left">
+													<a href="single.html"><img src="images/f1.jpg" alt=""></a>
+												</div>
+												<div class="col-md-9 post-right">
+													<h4><a href="single.html">Silicon Valley Shows Signs of Dot-Com Frenzy</a></h4>
+													<p class="comments">August 28 2015, <a href="#">8 Comments</a></p>
+													<p class="text">Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur......</p>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="post-grids">
+												<div class="col-md-3 post-left">
+													<a href="single.html"><img src="images/f2.jpg" alt=""></a>
+												</div>
+												<div class="col-md-9 post-right">
+													<h4><a href="single.html">Silicon Valley Shows Signs of Dot-Com Frenzy</a></h4>
+													<p class="comments">August 30 2015, <a href="#">8 Comments</a></p>
+													<p class="text">Lorem ipsum ex vix Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur... illud nonummy, novum tation et his. At vix scripta patrioque scribentur...</p>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="post-grids">
+												<div class="col-md-3 post-left">
+													<a href="single.html"><img src="images/f3.jpg" alt=""></a>
+												</div>
+												<div class="col-md-9 post-right">
+													<h4><a href="#">Silicon Valley Shows Signs of Dot-Com Frenzy</a></h4>
+													<p class="comments">Sep 4 2015, <a href="#">8 Comments</a></p>
+													<p class="text">Lorem ipsum ex vix illud nonummy,Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur... novum tation et his. At vix scripta patrioque scribentur...</p>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<div class="post-grids">
+												<div class="col-md-3 post-left">
+													<a href="single.html"><img src="images/f4.jpg" alt=""></a>
+												</div>
+												<div class="col-md-9 post-right">
+													<h4><a href="#">Silicon Valley Shows Signs of Dot-Com Frenzy</a></h4>
+													<p class="comments">Sep 4 2015, <a href="#">8 Comments</a></p>
+													<p class="text">Lorem ipsum ex vix illud nonummy, novum tation et his.Lorem ipsum ex vix illud nonummy, novum tation et his. At vix scripta patrioque scribentur... At vix scripta patrioque scribentur...</p>
+												</div>
+												<div class="clearfix"> </div>
+											</div>
+											<!--leave-->
+										<div class="leave">
+											<h4>Leave a comment</h4>
+											<form id="commentform">
+												 <p class="comment-form-author-name"><label for="author">Name</label>
+													<input id="author" type="text" value="" size="30" aria-required="true">
+												 </p>
+												 <p class="comment-form-email">
+													<label class="email">Email</label>
+													<input id="email" type="text" value="" size="30" aria-required="true">
+												 </p>
+												 <p class="comment-form-comment">
+													<label class="comment">Comment</label>
+													<textarea></textarea>
+												 </p>
+												 <div class="clearfix"></div>
+												<p class="form-submit">
+												   <input type="submit" id="submit" value="Send">
+												</p>
+												<div class="clearfix"></div>
+											   </form>
+
+											</div>
+										</div>
+							 <!--//leave-->
+				</div>
+				 
+				    
+						   
+							 
+							<!--//edit-pics-->
+							
+						</div>
+						<div class="clearfix"></div>
+					</div>
+			     <!--//end-mag-inner-->
+                     <!--/mag-bottom-->
+				 <div class="mag-bottom">
+                     <h3 class="tittle bottom"><i class="glyphicon glyphicon-globe"></i>From around the World</h3>
+		             <div class="grid">
+						  <div class="col-md-4 m-b">
+							 <figure class="effect-layla">
+								<img src="images/pic.jpg" alt="img25"/>
+								<figcaption>
+									<h4>News <span>Mag</span></h4>
+									<a href="#">View more</a>
+								</figcaption>			
+							  </figure>
+							   <div class="m-b-text">
+									<a href="single.html" class="wd">Lorem ipsum dolor sit amet,interdum ullamcorper consectetur </a>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a class="read" href="#">Read More</a>
+								</div>
+						  </div>
+						   <div class="col-md-4 m-b">
+							 <figure class="effect-layla">
+								<img src="images/pic2.jpg" alt="img25"/>
+								<figcaption>
+									<h4>News <span>Mag</span></h4>
+								</figcaption>			
+							  </figure>
+							  <div class="m-b-text">
+									<a href="single.html" class="wd">Lorem ipsum dolor sit amet,interdum ullamcorper consectetur </a>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a class="read" href="#">Read More</a>
+								</div>
+						  </div>
+						  <div class="col-md-4 m-b">
+							 <figure class="effect-layla">
+								<img src="images/pic3.jpg" alt="img25"/>
+								<figcaption>
+									<h4>News <span>Mag</span></h4>
+								</figcaption>			
+							  </figure>
+							  <div class="m-b-text">
+									<a href="single.html" class="wd">Lorem ipsum dolor sit amet,interdum ullamcorper consectetur </a>
+									<p>Nulla quis lorem neque, mattis venenatis lectus. In interdum ullamcorper dolor eu mattis.</p>
+									<a class="read" href="#">Read More</a>
+								</div>
+						  </div>
+						 <div class="clearfix"></div>
+						</div>
+				  </div>
+				 <!--//mag-bottom-->
+	       </div>
     {% endblock %}
